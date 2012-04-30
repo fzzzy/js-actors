@@ -1,0 +1,6 @@
+js-actors
+
+4/30/2012
+Donovan Preston
+
+An experiment in scheduling javascript contexts using greenlet, thanks to python-spidermonkey. The concept works and seems to have light memory usage (about 200k per thread of control) but there seems to be a hard limit somewhere and spidermonkey refuses to create more than 63 runtimes, no matter how I tweak the heap/stack sizes of the runtime and context. python-spidermonkey still depends on spidermonkey 1.7, which is years out of date. Updating python-spidermonkey to build against mozilla-central head would be a good thing to try next.
